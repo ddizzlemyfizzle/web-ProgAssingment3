@@ -1,0 +1,60 @@
+<html>
+
+<head>
+      <link rel="stylesheet" href="style.css">
+
+       <nav>
+          <a id="newUserNavLink" href="http://localhost:8000">Create your new User!</a>
+     <a id="newUserNavLink" href="http://localhost:8000/user/new">Create your new User!</a>
+    </nav>    
+
+</head>
+    <body>
+      {{title}}
+     <title>{{title}}</title>  
+
+    <h1>{{message}}</h1>
+
+     <form action="" method="POST" id="new-category-form">
+        <label for="userId">User:</label><br>
+        <input id="userId" type="text" name="userId"><br>
+        <label for="title">Title:</label><br>
+        <input id="title" type="text" name="title">
+         <label for="description">description:</label><br>
+        <input id="description" type="text" name="description"> 
+        <button>Submit</button>        
+     </form> 
+
+     <table id="categories">
+
+     <tr category-id={{categoryID}}>
+
+         <td>         
+            {{categoryTitle}}
+         </td>
+
+         <td>
+           {{categoryCreatedAt}}
+         </td>
+
+         <td>
+           {{categoryUsername}}
+         </td>
+
+        <td>
+          <p>No</p>  
+        </td>
+
+     </tr>
+
+
+     </table> 
+
+
+
+     
+     <footer>
+       Copyright 2021 Vikram Singh
+     </footer>
+    </body>
+ </html>
